@@ -1,1 +1,63 @@
-/* your code */
+body {
+	background-color:aqua;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	margin:0;
+	padding:20px
+}
+main {
+	width:100%;
+	max-width:1000px;
+}
+table{
+	width:100%;
+	border-collapse:separate;
+	border-spacing:0;
+	background-color:#ffffff;
+	border-radius:16px;
+	box-shadow:0 4px 15px rgba(0,0,0,0.5)
+}
+thead {
+    background-color: #1d5f96; /* Dark blue background color */
+}
+th {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: left;
+    padding: 16px 24px;
+}
+
+/* Table Body Cell Settings */
+td {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 16px 24px;
+    border-bottom: 1px solid #eaeaea; /* Light separator lines between matches */
+}
+
+/* Remove bottom border from the very last row so it doesn't break the rounded edges */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Alternating Row Shading (Zebra Striping) */
+tbody tr:nth-child(even) {
+    background-color: #e5e5e5; /* The distinct silver/gray backdrop on the 2nd and 4th rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Column Alignment Balancing */
+/* Aligning values nicely over wide desktop grids */
+th:not(:first-child), 
+td:not(:first-child) {
+    width: 15%; /* Allocates uniform, scannable column spaces for statistics */
+}
